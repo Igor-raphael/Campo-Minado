@@ -19,8 +19,13 @@ Esse pacote gerencia as opções gerais do jogo, além do visual apresentado no 
 Responsável exclusivamente pela execução do jogo. O método `main` controla o fluxo do jogo, interage com os outros pacotes e executa a lógica de início, andamento e término da partida.
 
 ## Como Funciona
-
+![png do Console](https://github.com/Igor-raphael/Campo-Minado/blob/main/Console.png)
 1. O tabuleiro é gerado ao decidir quantas linhas, colunas e bombas definidas na classe `main`, as bombas são distribuídas aleatoriamente pelo tabuleiro.
+~~~java
+Tabuleiro tabuleiro = new Tabuleiro(6, 6, 6);
+~~~
+Nesse caso teremos respectivamente 6 linhas (de 0 a 5), 6 colunas (de 0 a 5) e 6 bombas nesse tabuleiro. 
+
 2. O jogador deve marcar onde acredita que as bombas estão localizadas, enquanto tenta abrir os campos numéricos, que indicam a quantidade de bombas nas células adjacentes, havendo as coordenadas X que são as linhas e Y sendo suas colunas.
 3. O jogo termina quando o jogador abre uma célula contendo uma bomba ou quando marca todas as bombas corretamente.
 
